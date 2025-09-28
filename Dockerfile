@@ -1,5 +1,7 @@
 FROM python:3.13-slim
 
+LABEL org.opencontainers.image.source https://github.com/ShimonDarshan/url-resolver
+
 
 WORKDIR /api
 
