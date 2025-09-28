@@ -53,8 +53,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner | tolower }}/url-resolver:latest .
+          docker build -t ghcr.io/${{ github.repository_owner }}/url-resolver:latest .
 
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository_owner | tolower }}/url-resolver:latest
+          docker push ghcr.io/${{ github.repository_owner }}/url-resolver:latest
